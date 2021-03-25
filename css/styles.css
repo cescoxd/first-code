@@ -1,0 +1,104 @@
+/* Reglas por defecto */
+
+* {
+    box-sizing: border-box;
+    /* https://fonts.google.com */
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Reglas asociadas a las columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+}
+
+#section-2 {
+    background-color: #509ea0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+    padding: 40px;
+}
+
+#section-3 {
+    padding: 0 7%;
+}
+
+.column-4{
+    width: 25%;
+    float: left;
+}
+.column-4 p {
+    color: white;
+}
+#section-4{
+    background-color: gray;
+}
+/* Estilos de la página */
+
+#header {
+    text-align: center;
+    background-image: url('../img/teclado.jpg');
+    background-size: cover;
+    padding: 30vh 100px;
+    height: 100vh;
+    color: white;
+    text-shadow: 20px 20px 20px black;
+}
+
+#header h1 {
+    font-size: 70px;
+}
+
+#header h2 {
+    font-size: 40px;
+}
+
+#map {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    /* height="450" style="border:0;" */
+}
+
+@media screen and (max-width: 600px) {
+    /* Aquí dentro van las reglas */
+    #header h1 {
+        font-size: 50px;
+    }
+    #header h2 {
+        font-size: 30px;
+    }
+    #header {
+        padding: 30vh 10px;
+    }
+    .column-2 {
+        width: 100%;
+        padding: 5px;
+    }
+    #section-2, #section-3, .column-2{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
